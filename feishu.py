@@ -19,7 +19,7 @@ def send_msg_to_feishu(webhook_url, msg):
 def gen_msg_and_send(input_file,url, num, html_url):
     with open(input_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
-    content = "发现高危漏洞{}个，发现中危漏洞{}个，详细信息可以查看http://162.14.151.236:1333/{}".format(num[0],num[1],html_url)
+    content = "发现高危漏洞{}个，发现中危漏洞{}个，详细信息可以查看http://xxxx/{}".format(num[0],num[1],html_url)
     num_f = num[0] + num[1]
     msg = {
         "msg_type": "interactive",
